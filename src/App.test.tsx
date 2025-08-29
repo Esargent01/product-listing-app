@@ -165,14 +165,14 @@ describe('Product Listing App', () => {
             const images = screen.getAllByRole('img');
             expect(images).toHaveLength(3);
 
-            expect(images[0]).toHaveAttribute('src', 'https://example.com/headphones.jpg');
-            expect(images[0]).toHaveAttribute('alt', 'Wireless Bluetooth Headphones');
+            expect(images[0]).toHaveAttribute('src', 'https://example.com/speaker.jpg');
+            expect(images[0]).toHaveAttribute('alt', 'Portable Bluetooth Speaker');
 
-            expect(images[1]).toHaveAttribute('src', 'https://example.com/watch.jpg');
-            expect(images[1]).toHaveAttribute('alt', 'Smart Fitness Watch');
+            expect(images[1]).toHaveAttribute('src', 'https://example.com/headphones.jpg');
+            expect(images[1]).toHaveAttribute('alt', 'Wireless Bluetooth Headphones');
 
-            expect(images[2]).toHaveAttribute('src', 'https://example.com/speaker.jpg');
-            expect(images[2]).toHaveAttribute('alt', 'Portable Bluetooth Speaker');
+            expect(images[2]).toHaveAttribute('src', 'https://example.com/watch.jpg');
+            expect(images[2]).toHaveAttribute('alt', 'Smart Fitness Watch');
         });
     });
 });
