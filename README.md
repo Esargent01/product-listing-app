@@ -358,7 +358,7 @@ This will create 12 sample products in `backend/data/products.json`.
 ### Common Issues
 
 **Port Conflicts:**
-- Frontend: Change port in `package.json` scripts if 3002 is occupied
+- Frontend: Change port in `package.json` scripts if 3000 is occupied
 - Backend: Change port in `config.env` if 5001 is occupied
 
 **Test Failures:**
