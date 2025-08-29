@@ -1,0 +1,40 @@
+// Color Variables
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$success-color: #059669;
+$warning-color: #fbbf24;
+$error-color: #dc2626;
+$text-primary: #1f2937;
+$text-secondary: #6b7280;
+$text-muted: #9ca3af;
+$border-color: #e5e7eb;
+$background-light: #f8fafc;
+$background-gray: #f3f4f6;
+$light-gray: #f3f4f6;
+$white: #fff;
+$black: #000;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 4rem;
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-sm: 0.5rem;
+$border-radius-md: 1rem;
+
+// Shadows
+$box-shadow: 0 2px 10px rgba($black, 0.1);
+$shadow-sm: 0 2px 10px rgba($black, 0.1);
+$shadow-md: 0 4px 6px rgba($black, 0.05);
+$shadow-lg: 0 12px 24px rgba($black, 0.1);
+$shadow-focus: 0 0 0 3px rgba($primary-color, 0.1);
+$shadow-button: 0 4px 12px rgba($primary-color, 0.3);

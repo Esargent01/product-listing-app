@@ -1,0 +1,95 @@
+@import './variables';
+
+// Layout Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Visual Mixins
+@mixin gradient-primary {
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+@mixin border-radius($radius: $border-radius-sm) {
+    border-radius: $radius;
+}
+
+// Responsive Mixins
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include responsive($breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @include responsive($breakpoint-mobile) {
+        @content;
+    }
+}
+
+// Component Mixins
+@mixin button-base {
+    padding: $spacing-md $spacing-lg;
+    border: none;
+    @include border-radius;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    @include transition;
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    white-space: nowrap;
+}
+
+@mixin input-base {
+    width: 100%;
+    padding: $spacing-md;
+    border: 2px solid $border-color;
+    @include border-radius;
+    font-size: 1rem;
+    @include transition;
+    background: $white;
+
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+        @include box-shadow($shadow-focus);
+    }
+}
+
+@mixin card-base {
+    background: $white;
+    @include border-radius($border-radius-md);
+    overflow: hidden;
+    @include box-shadow($shadow-md);
+    @include transition;
+    border: 1px solid $border-color;
+}

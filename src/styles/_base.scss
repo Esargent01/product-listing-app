@@ -1,0 +1,63 @@
+@import './variables';
+@import './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: $text-primary;
+    background-color: $background-light;
+}
+
+.app {
+    min-height: 100vh;
+    @include flex-column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+
+    @include tablet {
+        padding: 0 $spacing-lg;
+    }
+}
+
+.fas {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+}
+
+@media (prefers-contrast: high) {
+    .product-card {
+        border: 2px solid $black;
+    }
+
+    .search-input {
+        border: 2px solid $black;
+    }
+
+    .sort-button {
+        border: 2px solid $black;
+    }
+}

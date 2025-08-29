@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+    background: $text-primary;
+    color: $white;
+    padding: $spacing-xl 0;
+    margin-top: auto;
+
+    .footer-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+        @include tablet {
+            gap: $spacing-xl;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: $spacing-md;
+        }
+    }
+
+    .stat {
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: $text-muted;
+            margin-bottom: $spacing-xs;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $warning-color;
+        }
+    }
+}

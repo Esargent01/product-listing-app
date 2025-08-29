@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.sort-button {
+    @include button-base;
+    @include gradient-primary;
+    color: $white;
+
+    &:hover {
+        transform: translateY(-2px);
+        @include box-shadow($shadow-button);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    i {
+        font-size: 1rem;
+    }
+}
