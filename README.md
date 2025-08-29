@@ -157,7 +157,7 @@ npm install
 npm start
 ```
 
-The frontend will be available at [http://localhost:3002](http://localhost:3002)
+The frontend will be available at [http://localhost:3000](http://localhost:3000)
 
 ### 3. Backend Setup
 ```bash
@@ -179,7 +179,7 @@ The backend API will be available at [http://localhost:5001](http://localhost:50
 ## Available Scripts
 
 ### Frontend
-- `npm start` - Start development server (port 3002)
+- `npm start` - Start development server (port 3000)
 - `npm test` - Run unit test suite
 - `npm run cypress:run` - Run E2E tests in headless mode
 - `npm run cypress:open` - Open Cypress test runner

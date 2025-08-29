@@ -20,7 +20,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headed": "cypress run --headed",
-    "test:e2e": "start-server-and-test start http://localhost:3001 cypress:run"
+    "test:e2e": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "eslintConfig": {
     "extends": [

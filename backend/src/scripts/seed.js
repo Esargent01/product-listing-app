@@ -2,100 +2,100 @@ const { saveAllProducts } = require('../utils/storage');
 
 const products = [
     {
-        _id: "1",
-        name: "Wireless Bluetooth Headphones",
-        price: 89.99,
-        description: "High-quality wireless headphones with noise cancellation and 30-hour battery life",
-        image_url: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "1",
+        "name": "Wireless Bluetooth Headphones",
+        "price": 89.99,
+        "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life",
+        "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "2",
-        name: "Portable Bluetooth Speaker",
-        price: 49.99,
-        description: "Compact waterproof speaker with 360-degree sound and 12-hour battery",
-        image_url: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "2",
+        "name": "Portable Bluetooth Speaker",
+        "price": 49.99,
+        "description": "Compact waterproof speaker with 360-degree sound and 12-hour battery",
+        "image_url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "3",
-        name: "Smart Fitness Watch",
-        price: 199.99,
-        description: "Advanced fitness tracker with heart rate monitor and GPS tracking",
-        image_url: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "3",
+        "name": "Smart Fitness Watch",
+        "price": 199.99,
+        "description": "Advanced fitness tracker with heart rate monitor and GPS tracking",
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "4",
-        name: "Ultra HD 4K Camera",
-        price: 299.99,
-        description: "Professional 4K camera with image stabilization and 20x optical zoom",
-        image_url: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "4",
+        "name": "Ultra HD 4K Camera",
+        "price": 299.99,
+        "description": "Professional 4K camera with image stabilization and 20x optical zoom",
+        "image_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "5",
-        name: "Wireless Gaming Mouse",
-        price: 79.99,
-        description: "High-precision gaming mouse with customizable RGB lighting and 25K DPI sensor",
-        image_url: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "5",
+        "name": "Wireless Gaming Mouse",
+        "price": 79.99,
+        "description": "High-precision gaming mouse with customizable RGB lighting and 25K DPI sensor",
+        "image_url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "6",
-        name: "Mechanical Keyboard",
-        price: 129.99,
-        description: "Premium mechanical keyboard with Cherry MX switches and backlit keys",
-        image_url: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "6",
+        "name": "Mechanical Keyboard",
+        "price": 129.99,
+        "description": "Premium mechanical keyboard with Cherry MX switches and backlit keys",
+        "image_url": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "7",
-        name: "External SSD Drive",
-        price: 159.99,
-        description: "1TB portable SSD with USB 3.2 Gen 2 and 1050MB/s read speeds",
-        image_url: "https://images.unsplash.com/photo-1597872200969-74bdf514ee84?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "7",
+        "name": "External SSD Drive",
+        "price": 159.99,
+        "description": "1TB portable SSD with USB 3.2 Gen 2 and 1050MB/s read speeds",
+        "image_url": "https://images.pexels.com/photos/2942361/pexels-photo-2942361.jpeg",
+        "category": "Electronics"
     },
     {
-        _id: "8",
-        name: "Wireless Charging Pad",
-        price: 39.99,
-        description: "Fast wireless charging pad compatible with all Qi-enabled devices",
-        image_url: "https://images.unsplash.com/photo-1609592806596-b43bada2f2f8?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "8",
+        "name": "Wireless Charging Pad",
+        "price": 39.99,
+        "description": "Fast wireless charging pad compatible with all Qi-enabled devices",
+        "image_url": "https://images.pexels.com/photos/7742585/pexels-photo-7742585.jpeg",
+        "category": "Electronics"
     },
     {
-        _id: "9",
-        name: "Smart Home Hub",
-        price: 149.99,
-        description: "Central hub for controlling all your smart home devices with voice commands",
-        image_url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "9",
+        "name": "Smart Home Hub",
+        "price": 149.99,
+        "description": "Central hub for controlling all your smart home devices with voice commands",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "10",
-        name: "Portable Power Bank",
-        price: 29.99,
-        description: "20,000mAh power bank with fast charging and multiple USB ports",
-        image_url: "https://images.unsplash.com/photo-1609592806596-b43bada2f2f8?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "10",
+        "name": "Portable Power Bank",
+        "price": 29.99,
+        "description": "20,000mAh power bank with fast charging and multiple USB ports",
+        "image_url": "https://images.pexels.com/photos/518530/pexels-photo-518530.jpeg",
+        "category": "Electronics"
     },
     {
-        _id: "11",
-        name: "Wireless Earbuds",
-        price: 119.99,
-        description: "True wireless earbuds with active noise cancellation and touch controls",
-        image_url: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "11",
+        "name": "Wireless Earbuds",
+        "price": 119.99,
+        "description": "True wireless earbuds with active noise cancellation and touch controls",
+        "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=300&fit=crop",
+        "category": "Electronics"
     },
     {
-        _id: "12",
-        name: "USB-C Hub",
-        price: 69.99,
-        description: "7-in-1 USB-C hub with HDMI, USB ports, SD card reader, and Ethernet",
-        image_url: "https://images.unsplash.com/photo-1597872200969-74bdf514ee84?w=400&h=300&fit=crop",
-        category: "Electronics"
+        "_id": "12",
+        "name": "USB-C Hub",
+        "price": 69.99,
+        "description": "7-in-1 USB-C hub with HDMI, USB ports, SD card reader, and Ethernet",
+        "image_url": "https://images.pexels.com/photos/4072683/pexels-photo-4072683.jpeg",
+        "category": "Electronics"
     }
 ];
 
