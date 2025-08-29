@@ -148,7 +148,31 @@ git clone <repository-url>
 cd product-listing-app
 ```
 
-### 2. Frontend Setup
+### 2. Quick Start (Recommended)
+Start both frontend and backend with a single command:
+
+```bash
+# Option 1: Using the shell script (recommended)
+./start-dev.sh
+
+# Option 2: Using npm script
+npm run dev
+
+# Option 3: Using npm script with concurrently
+npm run dev:concurrent
+```
+
+This will:
+- Install dependencies for both frontend and backend
+- Check for port availability
+- Start both servers concurrently
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend: [http://localhost:5001](http://localhost:5001)
+
+### 3. Manual Setup (Alternative)
+If you prefer to start servers separately:
+
+#### Frontend Setup
 ```bash
 # Install dependencies
 npm install
@@ -159,7 +183,7 @@ npm start
 
 The frontend will be available at [http://localhost:3000](http://localhost:3000)
 
-### 3. Backend Setup
+#### Backend Setup
 ```bash
 # Navigate to backend directory
 cd backend
@@ -177,6 +201,11 @@ npm run dev
 The backend API will be available at [http://localhost:5001](http://localhost:5001)
 
 ## Available Scripts
+
+### Development (Root Directory)
+- `npm run dev` - Start both frontend and backend with shell script
+- `npm run dev:concurrent` - Start both servers using concurrently
+- `./start-dev.sh` - Shell script to start both servers (recommended)
 
 ### Frontend
 - `npm start` - Start development server (port 3000)

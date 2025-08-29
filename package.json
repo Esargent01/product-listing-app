@@ -20,7 +20,9 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headed": "cypress run --headed",
-    "test:e2e": "start-server-and-test start http://localhost:3000 cypress:run"
+    "test:e2e": "start-server-and-test start http://localhost:3000 cypress:run",
+    "dev": "./start-dev.sh",
+    "dev:concurrent": "concurrently --names \"frontend,backend\" --prefix-colors \"blue,green\" --kill-others \"npm start\" \"cd backend && npm run dev\""
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,7 @@
     "@types/node": "^24.3.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "concurrently": "^8.2.2",
     "cypress": "^15.0.0",
     "sass": "^1.91.0",
     "start-server-and-test": "^2.0.13",
